@@ -1,0 +1,23 @@
+{
+  "name": "test-front-end-meli",
+  "version": "1.0.0",
+  "description": "Test práctico para aspirantes al área de front-end de Mercado Libre.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoAguilera/test-front-end-meli.git"
+  },
+  "keywords": [],
+  "author": "Edgar Nicolás Aguilera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoAguilera/test-front-end-meli/issues"
+  },
+  "homepage": "https://github.com/nicoAguilera/test-front-end-meli#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
