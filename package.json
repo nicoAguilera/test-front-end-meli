@@ -4,7 +4,7 @@
   "description": "Test práctico para aspirantes al área de front-end de Mercado Libre.",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+    "start": "concurrently \"cd backend && npm run server\" \"cd client && npm start\""
   },
   "repository": {
     "type": "git",
