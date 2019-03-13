@@ -29,7 +29,7 @@ function itemById(id = '') {
 			if (data.status == 404 || data.error) {
 				response.error = { error: data.error, message: data.message };
 			} else {
-				Utils.mapItemsInfo([data]).then((description) => {
+				Utils.mapItemsInfo([data]).then((item) => {
 					Utils.getItemDescription(id).then((description) => {
 						response.item = item[0];
 						response.item.picture = (data.pictures[0] || {}).url,
