@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './searchbox.style.css';
+
 class SearchBox extends Component {
 	constructor(props) {
 		super(props);
@@ -21,9 +23,9 @@ class SearchBox extends Component {
 	}
 	render () {
 		return (
-			<form onSubmit={this.onSubmitHandler} role="search">
-				<input onChange={this.onChangeHandler} value={this.state.query} type="text" placeholder="Nunca dejes de buscar" maxLength="120" autoFocus autoCapitalize="off" autoCorrect="off" spellCheck="false" autoComplete="off" tabIndex="2"/>
-				<button type="submit">Buscar</button>
+			<form className="searchBox" onSubmit={this.onSubmitHandler} role="search">
+				<input className="searchBox__input searchBox__input--floated" onChange={this.onChangeHandler} value={this.state.query} type="text" placeholder="Nunca dejes de buscar" maxLength="120" autoFocus autoCapitalize="off" autoCorrect="off" spellCheck="false" autoComplete="off" tabIndex="2"/>
+				<button className="searchBox__btn searchBox__btn--appended" type="submit"><i className="icon icon--search">Buscar</i></button>
 			</form>
 		);
 	}
