@@ -1,0 +1,10 @@
+.products-list {
+	display: block;
+	width: 80%;
+	border-radius: 3px;
+	margin-bottom: 5%;
+}
+
+.product-list-container {
+	padding: 0;
+}
