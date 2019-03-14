@@ -39,6 +39,12 @@ function mapItemsInfo(items = []) {
 }
 
 function buildItemInfo(item, currencyData = {}) {
+	let condition_translate = item.condition;
+	if(item.condition == 'new')
+		condition_translate = 'Nuevo';
+	else {
+		condition_translate = 'Usado';
+	}
 	return {
 		id: item.id,
 		title: item.title,
@@ -48,7 +54,7 @@ function buildItemInfo(item, currencyData = {}) {
 			decimals: currencyData.decimal_places
 		},
 		picture: item.thumbnail,
-		condition: item.condition,
+		condition: condition_translate,
 		free_shipping: item.shipping.free_shipping,
 		address: item.seller_address.state.name
 	};
