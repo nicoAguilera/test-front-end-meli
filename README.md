@@ -19,12 +19,12 @@ $ npm start
 
 ### Client
 
-src: raíz del código fuente
-src/assets: imagenes
-src/components: componentes utilizados en la aplicación
-src/pages: vistas
-src/utils: utilidades para la aplicación
+* src: raíz del código fuente
+* src/assets: imagenes
+* src/components: componentes utilizados en la aplicación
+* src/pages: vistas
+* src/utils: utilidades para la aplicación
 
 ### Backend
 
-api: consulta a la API de MeLi
+* api: consulta a la API de MeLi
