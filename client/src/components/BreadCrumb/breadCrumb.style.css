@@ -1,4 +1,19 @@
 .app-breadcrumb {
+	font-size: 14px;
+	font-weight: 400;
+	color: #999;
 	margin-top: 16px;
 	margin-bottom: 16px;
+}
+
+.app-breadcrumb ul {
+	list-style: none;
+}
+
+.app-breadcrumb ul>li {
+	display: inline-block;
+}
+
+.app-breadcrumb ul>li:last-child {
+	font-weight: 600;
 }

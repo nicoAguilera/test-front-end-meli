@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 import MELI_API from '../../utils/meli-api';
 import ProductList from '../../components/ProductsList/ProductsList.component';
+import BreadCrumb from '../../components/BreadCrumb/BreadCrumb.component';
 
 class ProductsListPage extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			products: []
+			products: [],
+			categories: []
 		};
 		this.search = this.search.bind(this);
         this.parseQuery = this.parseQuery.bind(this);
@@ -49,7 +51,12 @@ class ProductsListPage extends Component {
 	}
 
 	render() {
-		return (<ProductList products={this.state.products} />);
+		return (
+			<div>
+				<BreadCrumb path={this.state.categories} />
+				<ProductList products={this.state.products} />
+			</div>
+		);
 	}
 }
 

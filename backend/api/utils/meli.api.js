@@ -55,7 +55,7 @@ function itemsByQuery(queryString = '') {
 			if (data.status == 404 || data.error) {
 				response.error = { error: data.error, message: data.message };
 			} else {
-				response.categories = data.categories || [];
+				response.categories = data.filters[0].values[0].path_from_root;
 				Utils.mapItemsInfo(data.results.slice(0, 4)).then(items => {
 					response.items = items;
 					resolve({ data: response });
